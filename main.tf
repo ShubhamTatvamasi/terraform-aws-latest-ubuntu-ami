@@ -4,7 +4,7 @@ data "aws_ami" "latest_ubuntu_ami" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-${var.ubuntu_version}-*"]
   }
 
   filter {
